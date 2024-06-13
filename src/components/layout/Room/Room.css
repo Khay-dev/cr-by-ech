@@ -1,0 +1,154 @@
+ .section-2 {
+     height: 80%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 50px;
+     gap: 4rem;
+     border-top: 1px solid #073c36;
+ }
+
+ .section-2 .img {
+     width: 50%;
+ }
+
+ .room-det {
+     display: flex;
+     flex-direction: column;
+     gap: 1rem;
+     width: 40%;
+ }
+
+ .room-header {
+     font-weight: 500;
+     font-size: clamp(2rem, 2vw + 1rem, 3.2rem);
+     line-height: 1;
+     color: #073c36;
+ }
+
+ .room-text {
+     font-family: 'Mulish', sans-serif;
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 1.45;
+     color: #073c36;
+     
+ }
+
+ .room-list {
+     margin: 10px 0px;
+
+ }
+
+ .room-list .room {
+     padding: 10px;
+     cursor: pointer;
+     width: 50%;
+     color: #073c36;
+     border-bottom: 1px solid #073c36;
+ }
+
+ .room:hover {
+     transform: translateX(10px);
+     transition: transform 200ms ease-in;
+ }
+
+ .room-b {
+     margin: 20px 0;
+ }
+
+ .room-det button {
+     color: #073c36;
+ }
+
+ .custom-btn {
+     padding: 10px 25px;
+     font-weight: 500;
+     background: transparent;
+     outline: none !important;
+     cursor: pointer;
+     transition: all 0.3s ease;
+     position: relative;
+     display: inline-block;
+ }
+
+ .btn-11 {
+     background: #f2f2f2;
+     border: 1px solid #073c36;
+     transition: all 0.3s ease;
+ }
+
+ .btn-11:before,
+ .btn-11:after {
+     position: absolute;
+     content: " ";
+     z-index: -1;
+     width: 25%;
+     top: 50%;
+     height: 2px;
+     background: #073c36;
+     transition: all 0.3s ease;
+ }
+
+ .btn-11:before {
+     left: -10%;
+ }
+
+ .btn-11:after {
+     right: -10%;
+ }
+
+ .btn-11:hover {
+     background: #073c36;
+     color: #fff;
+ }
+
+ .btn-11:hover:before {
+     left: 0%;
+ }
+
+ .btn-11:hover:after {
+     right: 0%;
+ }
+
+
+ @media screen and (min-width:768px)and (max-width:1025px) {
+     .section-2 {
+         gap: 3.5rem;
+         padding: 50px 35px;
+     }
+
+     .room-list .room {
+         width: 65%;
+     }
+
+     .room-det button {
+         width: 50%;
+     }
+
+     .section-2 .img {
+         width: 50%;
+     }
+ }
+
+ @media screen and (max-width:767px) {
+     .section-2 {
+         flex-wrap: wrap;
+         padding: 50px 20px;
+         gap: 2rem;
+     }
+
+     .section-2 .img,
+     .room-det,
+     .room-list .room,
+     .room-det button {
+         width: 100%;
+     }
+
+     .room-det {
+         align-items: center;
+         text-align: center;
+     }
+
+
+ }

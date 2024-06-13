@@ -1,0 +1,77 @@
+.gallery {
+    padding: 100px 50px 50px 50px;
+}
+
+
+.gallery-main {
+    gap: 3rem;
+    display: grid;
+    place-items: center;
+    align-items: center;
+    grid-template-columns: repeat(4, minmax(280px, 1fr));
+}
+
+.gallery-title {
+    background-image: linear-gradient(rgba(12, 44, 40, 0.96), rgba(12, 44, 40, 0.96)), url(../../../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    padding: 100px 50px 50px;
+
+}
+
+.gallery-title h2 {
+    font-weight: 500;
+    font-size: clamp(2rem, 2vw + 1rem, 3.2rem);
+    line-height: 1;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+.gallery-title-p {
+    font-family: 'Mulish', sans-serif;
+    margin-bottom: 20px;
+    font-size: 17px;
+    line-height: 1.75;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+}
+
+
+.card-text {
+    font-size: 18px;
+    line-height: 1.75;
+    font-weight: 400;
+    color: #073c36;
+    margin-top: 20px;
+}
+
+
+@media screen and (min-width:768px)and (max-width:1025px) {
+    .gallery-main {
+        grid-template-columns: repeat(2, minmax(80px, 1fr));
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .gallery {
+        padding: 50px 20px;
+    }
+
+    .gallery-main {
+        grid-template-columns: repeat(1, minmax(80px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .gallery-title {
+        padding: 120px 20px 50px;
+    }
+
+    .card-text {
+        text-align: center;
+    }
+}

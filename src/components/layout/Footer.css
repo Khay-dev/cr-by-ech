@@ -1,0 +1,139 @@
+.main-footer {
+    height: auto;
+    background: #0c2c28;
+    padding: 50px;
+    display: grid;
+    place-items: center;
+}
+
+.footer-logo {
+    width: 30%;
+    margin-bottom: 50px;
+}
+
+
+
+.section-5-main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.section-5-main .text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    font-size: clamp(2rem, 2.2vw + 1rem, 3.2rem);
+    color: #fff;
+    letter-spacing: 20px;
+    width: 50%;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    margin-left: 150px;
+
+}
+
+.address {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    font-size: 16px;
+    color: #fff;
+}
+
+.call,
+.mail {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    font-size: 16px;
+    color: #fff;
+}
+
+.final-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 400;
+    line-height: 1;
+    font-size: 16px;
+    color: #fff;
+    background: #d48c46;
+    padding: 50px;
+}
+
+.final-footer .copy {
+    width: 35%;
+    line-height: 1.45;
+}
+
+.btt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid #fff;
+    padding: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.us a {
+    color: #0c2c28;
+}
+
+@media screen and (min-width:768px)and (max-width:1025px) {
+    .footer-logo {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .main-footer {
+        padding: 50px 20px;
+    }
+
+    .section-5-main {
+        flex-wrap: wrap;
+    }
+
+    .section-5-main .text {
+        gap: 10px;
+        width: 100%;
+        letter-spacing: 10px;
+    }
+
+    .details {
+        width: 100%;
+        text-align: center;
+        margin: 0px;
+
+    }
+
+    .final-footer {
+        flex-wrap: wrap;
+        padding: 50px 20px;
+        gap: 35px;
+        text-align: center;
+    }
+
+    .final-footer .copy,
+    .us {
+        width: 100%;
+    }
+
+    .footer-logo {
+        width: 70%;
+    }
+}

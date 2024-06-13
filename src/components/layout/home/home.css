@@ -1,0 +1,74 @@
+.hero {
+    height: 100vh;
+    background-image: linear-gradient(rgba(12, 44, 40, 0.96), rgba(12, 44, 40, 0.96)), url(../../../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.hero h2 {
+    font-size: clamp(1.85rem, 3vw + 1rem, 3.4rem);
+    line-height: 1.45;
+    color: #fff;
+    width: 80%;
+    font-weight: 400;
+    position: absolute;
+    top: 48%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+
+
+.main-home {
+    display: grid;
+    place-items: center;
+    padding-top: 90px;
+    width: 80%;
+    height: 100%;
+}
+
+.home-img {
+    width: 100%;
+    height: 90%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+        url(../../../img/reception.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media screen and (min-width:768px)and (max-width:1025px) {
+    .hero {
+        height: 80vh;
+    }
+
+    .hero h2 {
+        top: 40%;
+    }
+
+    .home-img h2 {
+        line-height: 60px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .hero {
+        height: 80vh;
+    }
+
+    .hero h2 {
+        left: 50%;
+        width: 90%;
+        top: 50%;
+    }
+
+    .home-img h2 {
+        line-height: 50px;
+    }
+}

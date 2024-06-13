@@ -1,0 +1,104 @@
+.section-5 {
+    background-image: linear-gradient(rgba(12, 44, 40, 0.96), rgba(12, 44, 40, 0.96)), url(../../../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    padding-top: 50px;
+}
+
+a {
+    color: #fff;
+}
+
+.main-contact {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contact-dets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 2.5rem;
+    width: 40%;
+}
+
+.contact-dets .address {
+    font-family: 'Mulish', sans-serif;
+    line-height: 1.45;
+    font-weight: 500;
+    color: #fff;
+    font-size: 18px;
+}
+
+.name {
+    line-height: 1.45;
+    font-weight: 500;
+    color: #fff;
+    font-size: 22px;
+}
+
+.contact-dets .mail,
+.contact-dets .call,
+.contact-dets a {
+    font-family: 'Mulish', sans-serif;
+    line-height: 1.45;
+    font-weight: 500;
+    color: #fff;
+    font-size: 18px;
+}
+
+.contact-text {
+    font-weight: 600;
+    line-height: 2;
+    color: #fff;
+    width: 40%;
+    font-weight: 400;
+    font-size: clamp(1.3rem, 3vw + 1rem, 3rem);
+}
+
+
+
+.submit-btn {
+    width: 30%;
+    color: #073c36;
+}
+
+@media screen and (min-width:768px)and (max-width:1025px) {
+    .section-5 {
+        height: 100vh;
+        padding-top: 130px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .section-5 {
+        padding: 120px 20px;
+        height: auto;
+        text-align: center;
+    }
+
+    .contact-dets,
+    .contact-text {
+        width: 100%;
+    }
+
+    .contact-dets {
+        padding: 0px;
+    }
+
+    .main-contact {
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+
+    .contact-dets .address {
+        font-size: 15px;
+    }
+}
